@@ -1,0 +1,230 @@
+/* @iliymans */
+
+/* General Setting */
+@import url(../font/style.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: IRANSans;
+  user-select: none;
+}
+body {
+  direction: rtl;
+  background-color: #E4F9F5;
+}
+
+/* Header */
+header {
+  height: 400px;
+  background-color: #11999E;
+  padding: 10px;
+  margin-bottom: 50px;
+  color: 30E3CA;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+header .container .header-section {
+  display: flex;
+  justify-content: space-around;
+}
+header .container .right-header {
+  align-self: center;
+  flex-basis: 50%;
+}
+header .container .header-section .right-header h1 {
+  font-family: IRANSansBold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #E4F9F5;
+  text-shadow: #40514E 1px 1px;
+}
+header .container .header-section .right-header p {
+  text-align: justify;
+  font-family: IRANSans;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #E4F9F5;
+  line-height: 21px;
+}
+header .container .header-section .right-header button {
+  cursor: pointer;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #40514E;
+  color: #E4F9F5;
+  font-family: IRANSansBold;
+}
+header .container .header-section .right-header button:hover {
+  opacity: 0.9;
+}
+header .container .header-section .left-header {
+  flex-basis: 40%;
+  align-self: center;
+}
+header .container .header-section .left-header img {
+  width: 500px;
+  /* padding-top: 5px; */
+}
+
+/* Content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .product {
+  flex-basis: 290px;
+  border: 1px solid #dfdfdf;
+  padding: 10px;
+  margin: 5px;
+}
+
+main .product img {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+main .product h5 {
+  font-family: IRANSansLight;
+  margin-bottom: 10px;
+  height: 40px;
+  color: #3C486B;
+}
+main .product p {
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #F45050;
+  font-family: IRANSansMedium;
+}
+main .product span {
+  font-family: IRANSansBold;
+  float: left;
+  color: #3C486B;
+}
+main .product i {
+  cursor: pointer;
+}
+
+/* Cart */
+.cart {
+  background-color: #d8d8d8;
+  width: 300px;
+  height: 37px;
+  position: fixed;
+  left: 5px;
+  bottom: 0;
+  border-radius: 5px;
+}
+.cart .cart-header {
+  background-color: #40514E;
+  color: #30E3CA;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 16px;
+  font-family: IRANSansMedium;
+  cursor: pointer;
+}
+.cart .cart-items {
+  height: 200px;
+  overflow-x: auto;
+  margin-bottom: 10px;
+  padding: 5px 5px;
+}
+.cart .cart-items .cart-item {
+  /* height: 25px; */
+  font-size: 12px;
+  font-family: IRANSanslight;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.cart .cart-items .cart-item i {
+  cursor: pointer;
+}
+.cart .cart-items .cart-item .p-price{
+  font-weight: 900;
+}
+.cart .cart-items .cart-item .p-name{
+  width: 150px;
+  font-weight: bold;
+}
+.cart .cart-items .cart-item .p-name:hover{
+  background-color: red;
+}
+.cart .total {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 14px;
+  font-family: IRANSansMedium;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+}
+footer p {
+  background-color: #11999E;
+  text-align: center;
+  color: #E4F9F5;
+  padding: 10px 0px;
+  font-family: IRANSansMedium;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  header .container .header-section {
+    justify-content: center;
+  }
+  header .container .header-section .left-header img {
+    width: 100%;
+  }
+  header .container .right-header {
+    flex-basis: 40%;
+  }
+  header {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header {
+    padding: 30px;
+  }
+  main {
+    padding: 30px;
+  }
+  header .container .header-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .container .right-header {
+    width: 100%;
+    flex-basis: 0;
+  }
+  header .container .left-header {
+    width: 100%;
+    flex-basis: 0;
+  }
+  main .product {
+    flex-basis: 250px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  main .product {
+    flex-basis: 350px;
+  }
+  header .container .header-section .left-header img {
+    margin-top: 10px;
+  }
+}
