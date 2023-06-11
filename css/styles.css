@@ -13,10 +13,17 @@ body {
   direction: rtl;
   background-color: #e4f9f5;
 }
+a{
+  text-decoration: none;
+}
+hr{
+  border: 2px solid #40514e;
+  border-radius: 100px;
+}
 
 /* Header */
 header {
-  height: 400px;
+  /* height: 400px; */
   background-color: #11999e;
   padding: 10px;
   margin-bottom: 50px;
@@ -40,6 +47,9 @@ header .container .header-section .right-header h1 {
   margin-bottom: 20px;
   color: #e4f9f5;
   text-shadow: #40514e 1px 1px;
+}
+header .container .header-section .right-header h1 .benberg{
+  color: #40514e;
 }
 header .container .header-section .right-header p {
   text-align: justify;
@@ -70,37 +80,35 @@ header .container .header-section .left-header {
 header .container .header-section .left-header img {
   width: 437px;
 }
-header .container .slideshow-container .mySlides {
+header .container2 .slideshow-container .mySlides {
   display: none;
 }
-header .container .slideshow-container .mySlides img {
+header .container2 .slideshow-container .mySlides img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-header .container .slideshow-container {
+header .container2 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
-header .container .slideshow-container .mySlides .text {
+header .container2 .slideshow-container .mySlides .text {
   color: #f2f2f2;
   font-family: IRANSansBold;
-  font-size: 18px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+  font-size: 16px;
   width: 100%;
   text-align: center;
 }
-header .container .slideshow-container .mySlides .numbertext {
+header .container2 .slideshow-container .mySlides .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  text-align: center;
+  /* padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 0; */
 }
-header .container .dot {
+header .container2 .dot {
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -110,12 +118,12 @@ header .container .dot {
   transition: background-color 0.6s ease;
 }
 
-header .container .active {
+header .container2 .active {
   background-color: #717171;
 }
 
 /* Fading animation */
-header .container .slideshow-container .fade {
+header .container2 .slideshow-container .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -128,7 +136,7 @@ header .container .slideshow-container .fade {
   }
 }
 @media only screen and (max-width: 300px) {
-  header .container .slideshow-container .mySlides .text {
+  header .container2 .slideshow-container .mySlides .text {
     font-size: 11px;
   }
 }
@@ -153,19 +161,22 @@ main .product img {
 }
 main .product h5 {
   font-family: IRANSansLight;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   height: 40px;
   color: #3c486b;
 }
 main .product p {
   font-size: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #f45050;
   font-family: IRANSansMedium;
 }
-main .product span {
+main .product .telephone {
   font-family: IRANSansBold;
-  float: left;
+  font-size: 12px;
+  /* float: left; */
+  text-align: center;
+  cursor: pointer;
   color: #3c486b;
 }
 main .product i {
@@ -233,7 +244,7 @@ footer {
   margin-top: 50px;
 }
 footer p {
-  background-color: #11999e;
+  background-color: #40514e;
   text-align: center;
   color: #e4f9f5;
   padding: 10px 0px;

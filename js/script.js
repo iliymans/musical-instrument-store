@@ -8,10 +8,9 @@ function showAllProducts() {
         alt="${products[i].name}">
         <h5>${products[i].name}</h5>
         <p>تعداد موجودی : ${products[i].inStock}</p>
-        <span>${commafy(products[i].price)}</span>
-        <i class="fa-solid fa-cart-plus fa-lg" style="color: #3C486B;" title="اضافه کردن به سبد خرید" onclick="addToCart(${
-          products[i].id
-        })"></i>
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+98 936 420 0953" class="telephone">تماس برای استعلام قیمت</a>
+        <!--<i class="fa-solid fa-cart-plus fa-lg" style="color: #3C486B;" title="اضافه کردن به سبد خرید" onclick="addToCart(${products[i].id})"></i>-->
     </div>
     `;
   }
